@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            /*width:400px;*/
+            max-width: 100%;
+        }
+        a:hover{ /* changes properties of links when highlighted */
+            color:green; 
+            font-weight: bolder;
+        }
+        a:focus{ /* changes properties of objects when selected either with TAB key or MOUSE1 */
+            background-color: bisque;
+        }
+        a:active{ /* changes properties around links when pressed down with MOUSE1 */
+            border: 1px solid red;
+        }
+        a:link{ /* adjusts link properties */
+            background-color:cornflowerblue;
+        }
+        a:visited{ /* changes properties of links when visited */
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <figure>
+            <img src="images/pexels-suju-15910083.jpg" title="Valais Sheep" alt="Picture of Valais Sheep on a mountainside">
+            <figcaption>These are Valais sheep, originating from Norway.</figcaption>
+        </figure>
+    </main>
+    <aside>
+        <ul> <!-- unnoted list -->
+            <li>Toyota</li> <!-- list item -->
+            <li>Nissan</li>
+            <li>Mazda</li>
+        </ul>
+        <ol> <!-- ordered list -->
+            <li>Toyota</li> 
+            <li>Nissan</li>
+            <li>Mazda</li>
+        </ol>
+        <dl> <!-- described list -->
+            <dt>Bullet1</dt>
+            <dd>Description about bullet1</dd>
+
+            <dt>Bullet2</dt>
+            <dd>Description about bullet2</dd>
+
+            <dt>Bullet3</dt>
+            <dd>Description about bullet3</dd>
+        </dl> 
+        <a href="https://www.google.com">Go to Google</a><br>
+        <a href="index1.html" target="_blank" title="Home Page">Go to first exercise</a><br>
+        <a href="mailto:test@test.ca">Send Mail to Test</a><br>
+        <a href="tel:233-444-5678">Call Test</a>
+    </aside>
+</body>
+</html>

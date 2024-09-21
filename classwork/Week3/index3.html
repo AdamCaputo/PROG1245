@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        video{
+            width: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <!-- <video src="video/2330708-uhd_3840_2160_24fps.mp4" controls muted loop poster="images/pexels-suju-15910083.jpg"> --> 
+        <video controls muted loop autoplay>
+            <source src="video/2330708-uhd_3840_2160_24fps.mp4" type="video/mp4/">
+            <source src="" type="video/webm"> <!-- this is a fallback if the mp4 version stops working -->
+            <p>Video cannot be played</p> <!-- if nothing can be played -->
+        </video>
+        <audio controls muted autoplay loop>
+            <audio src="" type="audio/mp3"> <!-- audio would go here if I had any -->
+            <audio src="" type="audio/ogg"> <!-- this is a fallback if the mp3 versions stops working -->
+            <p>Cannot play audio</p>
+        </audio>
+    </main>
+</body>
+</html>
