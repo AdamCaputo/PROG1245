@@ -1,0 +1,42 @@
+body{
+    width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    font-size: x-large;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+header nav a:hover{
+    color: white;
+    background-color:grey;
+}
+
+footer{
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    
+}
+main{
+    margin: 0px 70px 20px 70px;
+}
+main img:nth-child(3){
+    width: 400px;
+}
+hr{
+    padding: 10px;
+    background-color: darkslategray;
+}

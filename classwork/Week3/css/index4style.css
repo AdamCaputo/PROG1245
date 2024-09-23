@@ -1,0 +1,43 @@
+main div h2{
+    border: solid 2px green;
+    margin: 0px;
+}
+
+/* targeting child h1 when h1 grandchildren exist */
+
+main > h1{
+    border: solid 2px red;
+    margin: 0px;
+}
+/* the > sign makes the applied style stop at level, and won't leak into the parents */
+
+.pcls{
+    background-color: blanchedalmond;
+}
+#p3id{
+    background-color: aquamarine;
+}
+/* . for class, # for id */
+
+footer h3:nth-child(2){
+    background-color: blue;
+}
+/* targets a specific child, is a great substitute for class/id (class/id should be last resort + it's less processing) */
+/* can use "even" or "odd" in place of a number (in this case 2) to target all even or odd numbered children */ 
+
+h1~h2{
+    background-color:red;
+}
+/* generic sibling combinator */
+/* + is only one after [h1], ~ is anything after [h1] */
+/* using + instead of ~ is only going to target the immediate h2 that follows */
+
+a[title="test1"]{
+    background-color: aquamarine;
+}
+/* links that have the title "test1" will get targetted by this styling */
+
+h4, h5{
+    background-color: yellow;
+}
+/* targets mulitple different texts when you put a comma */
