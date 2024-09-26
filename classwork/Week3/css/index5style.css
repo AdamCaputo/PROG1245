@@ -28,15 +28,29 @@ footer{
     background-color: darkslategray;
     color: white;
     text-align: center;
-    
 }
+
 main{
     margin: 0px 70px 20px 70px;
 }
+
 main img:nth-child(3){
-    width: 400px;
+    width: 700px;
 }
+
+main img:nth-child(8){
+    width: 800px;
+}
+
 hr{
     padding: 10px;
     background-color: darkslategray;
+}
+
+footer h3:nth-child(1){
+    padding: 20px;
+}
+
+main video:nth-child(12){
+    width: 800px;
 }
