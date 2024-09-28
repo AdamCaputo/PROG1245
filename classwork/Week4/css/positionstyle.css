@@ -1,0 +1,38 @@
+body{
+    height: 5000px;
+}
+h1{
+    margin: 0px;
+    padding: 10px;
+}
+
+h1:nth-child(1){
+    background-color: blanchedalmond;
+    position: static;
+}
+h1:nth-child(2){
+    background-color: rgba(237, 213, 178, 0.551);
+    position: relative; /*relative is by default for the body*/
+    bottom: 40px;
+    right: 50px;
+    /*z-index: 99; goes from 1-99, bottom to top*/
+}
+h1:nth-child(3){
+    background-color: rgb(231, 203, 161);
+    position:fixed; /*stays in place when scrolling*/
+    right: 0px;
+    bottom: 0px;
+    
+}
+h1:nth-child(4){
+    background-color: rgb(221, 192, 149);
+    position:absolute;
+    right: 0px;
+    top: 300px;
+    left: 100px;
+}
+h1:nth-child(5){
+    background-color: rgb(210, 181, 138);
+    position: sticky;
+    top: 20px;
+}

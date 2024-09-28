@@ -1,0 +1,30 @@
+body{
+    margin: auto;
+    width: 864px;
+}
+h1{
+    width: 0px;
+}
+main{
+    width: 800px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid red;
+}
+#divA{
+    width: 500px;
+    border: 1px solid blue;
+    margin: 15px;
+    padding: 20px;
+    float: left;
+}
+#divB{
+    border: 1px solid blue;
+    margin: 15px;
+    padding: 10px;
+    width: 170px;
+    float: left;
+}
+aside{
+    clear: both;
+}
