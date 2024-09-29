@@ -12,7 +12,7 @@ h1:nth-child(1){
 }
 h1:nth-child(2){
     background-color: rgba(237, 213, 178, 0.551);
-    position: relative; /*relative is by default for the body*/
+    position: relative; /*relative is by default for the <html>*/
     bottom: 40px;
     right: 50px;
     /*z-index: 99; goes from 1-99, bottom to top*/
