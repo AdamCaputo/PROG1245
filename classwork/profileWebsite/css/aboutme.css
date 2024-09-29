@@ -1,0 +1,53 @@
+body{
+    width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header h1:nth-child(1){
+    margin-top: 1px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    font-size: x-large;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+header nav a:hover{
+    color: white;
+    background-color: grey;
+}
+
+.aboutmeMain{
+    padding:5px 30px;
+    background-color: rgb(246, 246, 246);
+    padding-bottom: 50px;
+}
+
+footer p{
+    padding: 10px;
+    background-color: darkslategray;
+    color:white;
+    text-align:center;
+    font-size: large;
+}
+
+.aboutmeMain img, .aboutmeMain video{
+    width:100%;
+}
+
+hr{
+    padding:10px;
+    background-color: darkslategray;
+}
