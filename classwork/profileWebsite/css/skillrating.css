@@ -29,10 +29,11 @@ header nav a:hover{
     background-color: grey;
 }
 
-.aboutmeMain{
+.skillratingMain{
     padding:5px 30px;
     background-color: rgb(235, 235, 235);
     padding-bottom: 50px;
+    
 }
 
 footer p{
@@ -42,12 +43,29 @@ footer p{
     text-align:center;
     font-size: large;
 }
-
-.aboutmeMain img, .aboutmeMain video{
-    width:100%;
+.skillratingMain table{
+    width: 800px;
+    font-size: 1.25em;
+    margin: 0px 150px;
 }
-
-hr{
-    padding:10px;
-    background-color: darkslategray;
+.skillratingMain table, .skillratingMain td, .skillratingMain th{
+    border: 2px solid rgb(125, 125, 125);
+    border-collapse: collapse;
+}
+.skillratingMain th, .skillratingMain td{
+    padding: 20px 10px;
+    background-color: white;
+}
+.skillratingMain th{
+    text-align: left;
+    background-color: rgb(213, 213, 213);
+}
+.skillratingMain table tbody tr td:nth-child(2){
+    color: rgb(197, 197, 35);
+    font-size: 1.5em;
+    font-weight:bolder;
+}
+.skillratingMain h1:nth-child(1){
+    margin: 0px 150px;
+    padding-top: 75px;
 }
