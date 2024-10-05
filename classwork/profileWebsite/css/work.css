@@ -48,7 +48,7 @@ figure img{
     float:left;  
     position:relative;  
 }
-#secondH3, footer{
+#secondH1, footer{
     clear:both;
 }
 #prjid figure figcaption, #sampid figure figcaption{
@@ -59,7 +59,7 @@ figure img{
     font-weight: bolder;
     font-size: large;
     padding:10px;
-    bottom:5px;
+    bottom: 3.5px;
     left:0px;
     right:0px;
 }
