@@ -1,0 +1,48 @@
+body{
+    width: 1000px;
+    height: 5000px;
+    text-align: center;
+}
+.structual{
+    padding: 20px;
+    border: 2px;
+    margin: 15px;
+}
+header{
+    background-color: blanchedalmond;
+}
+nav{
+    background-color: burlywood;
+    position: sticky;
+    top: 10px;
+}
+nav a:hover{
+    color: #f33;
+}
+aside:nth-child(3){
+    background-color: rgb(238, 199, 102);
+    width: 230px;
+    height: 400px;
+    float: left;
+    background-image: linear-gradient(blue, orange);
+}
+main{
+    background-color: rgb(226, 226, 159);
+    width: 325px;
+    height: 400px;
+    float: left;
+}
+aside:nth-child(5){
+    background-color: rgb(237, 173, 94);
+    width: 230px;
+    height: 400px;
+    float: left;
+    background-image: url(/labs/images/smallsheep.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+footer{
+    background-color: rgb(246, 140, 140);
+    clear: both;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.563);
+}
