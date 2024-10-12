@@ -47,10 +47,11 @@ footer{
 .mainimg{
     width: 100%;
     border: 4px solid gold;
+    border-radius: 7px;
 }
 main section figure figcaption{
-    font-style: bold;
     font-variant: small-caps;
+    font-weight: bold;
 }
 main section q{
     font-family: cursive;
