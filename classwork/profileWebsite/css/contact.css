@@ -1,0 +1,107 @@
+body{
+    width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header h1:nth-child(1){
+    margin-top: 1px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    font-size: x-large;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+header nav a:hover{
+    color: white;
+    background-color: grey;
+}
+
+.contactMain{
+    padding:5px 30px;
+    background-color: rgb(235, 235, 235);
+    padding-bottom: 50px;
+}
+
+footer p{
+    padding: 10px;
+    background-color: darkslategray;
+    color:white;
+    text-align:center;
+    font-size: large;
+}
+
+fieldset{
+    width: 390px;
+    padding: 8px;
+    margin: 10px;
+    border: 2px solid darkslategray;
+    float: left;
+}
+fieldset div label{
+    display: inline-block;
+    width: 100px;
+}
+input{
+    width: 200px;
+    margin-bottom: 10px;
+}
+textarea{
+    max-width: 200px;
+    max-height: 60px;
+}
+fieldset:nth-child(3), fieldset:nth-child(4){
+    height: 100px;
+}
+fieldset:nth-child(1), fieldset:nth-child(2){
+    height: 200px;
+}
+fieldset:nth-child(4){
+    height: 90px;
+    margin-top: 19px;
+}
+input[type=radio], input[type=checkbox]{
+    width:20px;
+}
+input[type=submit]{
+    width:100px;
+    padding:5px;
+    color:white;
+    font-weight: bold;
+    background-color: darkslategray;
+}
+section{
+    clear: both;
+}
+fieldset:nth-child(4) div label{
+    width: 300px;
+}
+aside h2{
+    float: left;
+    width: 100px;
+    border: 2px solid white;
+    text-align:center;
+    background-color: darkslategray;
+    color:white;
+    padding:10px;
+}
+input[type="date"]{
+    width:204px;
+}
+select{
+    width: 207px;
+}
+
+
