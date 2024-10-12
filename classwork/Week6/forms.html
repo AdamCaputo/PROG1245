@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <form name="myForm" action="" method="post"> <!-- get method is unsecure as info goes into URL, post method is safer and secure -->
+        <fieldset>
+            <legend>Contact Us</legend>
+            <div>
+                <label>Name: </label>
+                <input type="text" id="fn" name="fnn" placeholder="Enter first name" required> <!-- field is required for submission -->
+            </div>
+            <div>
+                <label>Password: </label>
+                <input type="password" id="pw" name="pwn" placeholder="Enter password">
+            </div>
+            <div>
+                <input type="hidden" id="hdi" name="hdn" value="secretkey">
+            </div>
+            <h3>Select Meal</h3>
+            <div>
+                <label>Pizza</label>
+                <input type="checkbox" id="c1" name="c1n" checked> 
+            </div>
+            <div>
+                <label>Pasta</label>
+                <input type="checkbox" id="c2" name="c2n">
+            </div>
+
+            <fieldset>
+                <legend>Select Color</legend>
+                <div>
+                    <input type="radio" id="r1" name="rnm" checked>
+                    <label>Red</label>
+                </div>
+                <div>
+                    <input type="radio" id="r2" name="rnm" checked> <!-- same name allows for only 1 selection, different names allows for multiple selections -->
+                    <label>Blue</label>
+                </div>
+            </fieldset>
+            <div>
+                <label>Select Car:</label>
+                <select name="sname"> <!-- "multiple" allows for multiple dropdown selections -->
+                    <option value="ToyotaCar">Toyota</option>
+                    <option value="NissanCar">Nissan</option>
+                    <option value="MazdaCar">Mazda</option>
+                </select>
+                <select name="sname1">
+                    <optgroup label="Trucks">
+                        <option value="Tundra">Tundra</option>
+                    </optgroup>
+                    <optgroup label="Cars">
+                        <option value="Corolla">Corolla</option>
+                        <option value="Sentra">Sentra</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label>Enter Message:</label>
+                <textarea rows="4" cols="10">Write here</textarea>
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="emn" id="emid" autofocus> <!-- autofocus places the cursor in the selected field on page load -->
+            </div>
+            <div>
+                <label>Date</label>
+                <input type="date" name="dnm" id="did">
+            </div>
+            <div>
+                <label>Time</label>
+                <input type="time" name="tnm" id="tid">
+            </div>
+            <div>
+                <label>Color</label>
+                <input type="color" name="cnm" id="cid">
+            </div>
+            <div>
+                <label>Number</label>
+                <input type="number" id="nid" name="nnm" step="0.5" min="0" max="100">
+            </div>
+            <div>
+                <label>Slider</label>
+                <input type="range" min="10" max="100" step="5">
+            </div>
+            <div>
+                <label>Attach File</label>
+                <input type="file" name="fnm" id="fid" accept="image/*">
+            </div>
+            <div>
+                <!-- <input type="button" value="Button"> -->
+                 <input type="submit" value="Submit Button">
+                 <input type="reset" value="Reset Button">
+            </div>
+        </fieldset>
+    </form>
+
+
+
+
+
+</body>
+</html>
