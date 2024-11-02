@@ -1,0 +1,63 @@
+body{
+    width: auto;
+    margin: auto;
+}
+
+header{
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header h1:nth-child(1){
+    margin-top: 1px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    font-size: x-large;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+header nav a:hover{
+    color: white;
+    background-color: grey;
+}
+
+.blogMain{
+    padding:10px;
+    background-color: rgb(235, 235, 235);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 8px;
+}
+main div{
+    background-color: white;
+    border-radius: 7px;
+    padding: 5px;
+}
+main div p:nth-child(2){
+    color: gray;
+    font-style: italic;
+}
+main div a{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(82, 82, 82);
+    text-decoration: none;
+}
+
+footer p{
+    padding: 10px;
+    background-color: darkslategray;
+    color:white;
+    text-align:center;
+    font-size: large;
+}
