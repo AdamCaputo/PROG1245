@@ -1,0 +1,43 @@
+main h1{
+    border: 1px solid blue;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 1fr 6 times */
+}
+
+main h1:nth-child(1){
+    grid-row: 1/2;
+    grid-column: 1/7;
+}
+main h1:nth-child(2){
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+main h1:nth-child(3){
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+main h1:nth-child(4){
+    grid-row: 2/3;
+    grid-column: 4/7;
+}
+main h1:nth-child(5){
+    grid-row: 3/5;
+    grid-column: 1/4;
+}
+main h1:nth-child(6){
+    grid-row: 3/4;
+    grid-column: 4/7;
+}
+main h1:nth-child(7){
+    grid-row: 4/5;
+    grid-column: 4/7;
+}
+
+
+
