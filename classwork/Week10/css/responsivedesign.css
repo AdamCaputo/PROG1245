@@ -1,0 +1,86 @@
+header{
+    text-align: center;
+    background-color: rgb(173, 36, 204);
+    padding: 20px;
+}
+header h1, header p{
+    margin: 0px;
+    color: white;
+}
+section{
+    display: flex;
+    margin: 10px;
+    height: 600px;
+}
+nav{
+    flex-basis: 200px;
+    background-color: blanchedalmond;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav a{
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    color: white;
+    background-color: cornflowerblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    margin: 10px;
+    text-align: center;
+}
+main{
+    flex-grow: 1;
+}
+aside{
+    flex-basis: 180px;
+    background-color: blanchedalmond;
+}
+footer p{
+    padding: 10px;
+    margin: 0px;
+    background-color: rgb(70, 43, 152);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+main figure{
+    margin: 0px;
+}
+main figure img{
+    width: 100%;
+}
+main{
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+@media (max-width:800px){
+    section{
+        flex-wrap: wrap;
+    }
+    aside{
+        flex-basis: 100%;
+    }
+}
+@media (max-width:500px){
+    nav{
+        flex-basis: 100%;
+    }
+    main{
+        flex-grow: 0;
+        flex-basis: 100%;
+    }
+    nav a{
+        width: 90%;
+    }
+
+}
+@media (max-width:300px){
+    body{
+        max-width: 300px;
+    }
+}
