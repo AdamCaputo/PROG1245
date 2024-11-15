@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(250, 242, 231);
+    margin: auto;
+    width: 1200px;
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    grid-template-areas:
+    "hd hd hd hd hd hd"
+    "nv nv nv nv nv nv"
+    "mn mn mn mn as as"
+    "mn mn mn mn as as"
+    "mn mn mn mn as as"
+    "ft ft ft ft ft ft";
+}
+header{
+    grid-area: hd;
+}
+header h1{
+    color: darkslateblue;
+}
+nav{
+    background-color: darkslateblue;
+    padding: 10px;
+    margin-bottom: 20px;
+    grid-area: nv;
+}
+nav div a{
+    background-color: white;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+}
+nav div{
+    margin-left: 500px;
+}
+main{
+    background-color: rgb(130, 187, 206);
+    padding: 5px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    grid-area: mn;
+}
+main h2{
+    color: yellow;
+}
+main form fieldset{
+    border: black 2px solid;
+}
+aside{
+    background-color: rgb(178, 178, 178);
+    grid-area: as;
+}
+footer{
+    background-color: darkslateblue;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    grid-area: ft;
+    margin-top: 20px;
+}
+main form fieldset div:nth-child(7) input{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    width: 80px;
+}
+main form fieldset div{
+    margin: 20px;
+}
+main form fieldset{
+    margin: 20px;
+}
+main h2{
+    margin: 20px;
+}
+aside h1{
+    color: yellow;
+    margin: 20px;
+}
+aside ul{
+    list-style: none;
+}
+main form fieldset div:nth-child(5) input{
+    width: 400px;
+    height: 40px;
+}
+main form fieldset div:nth-child(1) input{
+    width: 400px;
+    height: 30px;
+}
+main form > fieldset > div:nth-child(2) input{
+    width: 400px;
+    height: 30px;
+}
+
+main form > fieldset > div:nth-child(4) select{
+    width: 400px;
+    height: 30px;
+}
+
+
+
+
