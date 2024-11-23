@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="p-3 d-flex justify-content-between bg-light">
+            <i class="bi bi-camera2 h3 d-flex align-items-center">&nbsp;Camera</i>
+            <div>
+                <button class="btn btn-secondary"><i class="bi bi-list h3"></i></button>
+            </div>
+        </div>
+        <div class="carousel slide" id="car">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/pexels-pixabay-41004.jpg" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/pexels-sergii-363024142-29503381.jpg" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/pexels-thelazyartist-1201673.jpg" class="d-block w-100">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#car" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#car" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h2 class="my-3 ms-3">Location</h2>
+        <div class="accordion" id="accId">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#coll1" aria-expanded="true" aria-controls="coll1">
+                        Canada
+                    </button>
+                </div>
+                <div id="coll1" class="accordion-collapse collapse show" data-bs-parent="#accId">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#coll2" aria-expanded="true" aria-controls="coll2">
+                        USA
+                    </button>
+                </div>
+                <div id="coll2" class="accordion-collapse collapse" data-bs-parent="#accId">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#coll3" aria-expanded="true" aria-controls="coll3">
+                        Mexico
+                    </button>
+                </div>
+                <div id="coll3" class="accordion-collapse collapse" data-bs-parent="#accId">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5 w-50">
+            <table class="table table-striped-columns table-borderless table-hover table-sm">
+                <thead>
+                    <tr>
+                        <th>Destination</th>
+                        <th>Airfare</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cambodia</td>
+                        <td>CAD$6500</td>
+                    </tr>
+                    <tr class="table-group-divider">
+                        <td class="table-active">Thailand</td>
+                        <td>CAD$7500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form class="w-50 m-auto">
+            <fieldset class="p-5 border rounded-5">
+                <legend>Enter Information</legend>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emId">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" id="passId">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label class="form-label">Address-1</label>
+                        <input type="text" class="form-control" id="addId1" placeholder="Address 1">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label class="form-label">Address-2</label>
+                        <input type="text" class="form-control" id="addId2" placeholder="Address 2">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">City</label>
+                        <input type="text" class="form-control" id="cityId">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">State</label>
+                        <select class="form-select">
+                            <option value="usa" selected>America</option>
+                            <option value="asia">Asia</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <label class="form-label">ZIP</label>
+                        <input type="text" class="form-control" id="zipId">
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label class="form-check-label">Submit New Data</label>
+                        <input type="checkbox" class="form-check-input" id="cbId">
+                    </div>
+                    <div class="text-end">
+                        <input type="Submit" class="btn btn-primary" value="Submit">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
