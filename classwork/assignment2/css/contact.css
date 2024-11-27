@@ -1,0 +1,13 @@
+main form #mainForm{
+    background-color: blanchedalmond;
+}
+main form{
+    border: 3px solid gold;
+    border-radius: 34px;
+}
+main form #mainForm .row div:nth-child(6) input{
+    height: 150px;
+}
+main form #mainForm .row div{
+    margin-bottom: 20px;
+}

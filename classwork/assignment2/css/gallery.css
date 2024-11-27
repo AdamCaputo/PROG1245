@@ -1,0 +1,11 @@
+main div figure img{
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+}
+main div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: blanchedalmond;
+    border: 5px solid rgb(170, 106, 22);
+    border-radius: 7px;
+}
