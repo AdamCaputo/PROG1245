@@ -1,0 +1,135 @@
+body{
+    width: 1200px;
+    margin: auto;
+}
+body > div{
+    padding: 10px;
+    background-color: black;
+}
+header figure{
+    margin: 0px;
+    padding: 0px;
+    width: 150px;
+}
+header figure img{
+    width: 100%;
+}
+header{
+    display: flex;
+    margin: 10px 5px;
+}
+header nav{
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+}
+nav div a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: grey;
+}
+nav > div{
+    position: relative;
+    margin: 0px 30px;
+}
+nav div div{
+    position: absolute;
+    border: 1px solid black;
+    width: 150px;
+    left: 0px;
+    display: none;
+    z-index: 1;
+    background-color: white;
+}
+nav div div a{
+    display: inline-block;
+    width: 140px;
+    padding: 10px 5px;
+}
+nav div:hover div{
+    display: block;
+}
+nav div div a:hover{
+    background-color: grey;
+    color: white;
+}
+main img{
+    width: 100%;
+}
+main{
+    position: relative;
+}
+main div{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: linear-gradient(90deg, rgb(151, 44, 44), rgba(255, 255, 255, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 200px;
+    color: white;
+}
+section{
+    display: flex;
+    margin: 20px 0px;
+}
+section div{
+    flex: 0 0 240px; /* flex-grow, flex-shrink, flex-basis */
+}
+section aside{
+    flex: 0 0 920px;
+}
+section div ul{
+    background-color: rgb(203, 237, 237);
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+section div ul li{
+    padding: 15px;
+}
+section aside{
+    margin: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.card{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    height: 390px;
+}
+.card img{
+    width: 100%;
+}
+.card a{
+    background-color: red;
+    color: white;
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: none;
+}
+footer p{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+.card:hover a{
+    display: block;
+}
