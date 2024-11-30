@@ -1,0 +1,24 @@
+.mainimg{
+    width: 100%;
+    border: 4px solid gold;
+    border-radius: 7px;
+}
+main section figure figcaption{
+    font-variant: small-caps;
+    font-weight: bold;
+}
+main section q{
+    font-style: italic;
+    font-size: large;
+}
+main table{
+    border: 3px solid gold;
+    border-radius: 7px;
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+table, th, td{
+    border: 1px solid rgb(138, 76, 0);
+}

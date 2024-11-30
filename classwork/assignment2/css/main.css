@@ -1,0 +1,140 @@
+/* Adam Caputo 8887477 */
+body{
+    display: grid;
+    margin: auto;
+    padding: 20px;
+    font: 16px medium,'Trebuchet MS';
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn as as as"
+    "ft ft ft ft ft ft ft ft";
+}
+header{
+    grid-area: hd;
+}
+header, footer{
+    border: 2px solid gold;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    background-color: blanchedalmond;
+    background-image: linear-gradient(20deg, rgb(255, 246, 232), rgb(228, 173, 92));
+
+}
+header nav{
+    display: flex;
+    justify-content: center;
+}
+header nav a{
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(133, 18, 18);
+    font-size: larger;
+}
+h1, h2{
+    color: rgb(66, 42, 23);
+    font-variant: small-caps;
+}
+body footer p{
+    font-size: smaller;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+main{
+    grid-area: mn;
+    padding: 20px;
+    margin: 15px;
+}
+aside{
+    border: 2px solid gold;
+    padding: 20px;
+    margin: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/67/Wright_1901_glider_landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: as;
+}
+footer{
+    grid-area: ft;
+}
+
+aside ul li{
+    list-style: none;
+    line-height: 30px;
+}
+aside ul li > a{
+    text-decoration: none;
+    color: rgb(133, 18, 18);
+}
+a:hover{
+    color: gold
+}
+nav{
+    justify-content: flex-end;
+}
+nav a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+nav > ul{
+    list-style-type: none;
+}
+nav ul li ul{
+    list-style-type: none;
+    padding: 0px;
+    background-color: rgb(250, 223, 183);
+    width: 100px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+nav ul li ul li a{
+    display: inline-block;
+    padding: 0px;
+    width: 100%;
+    color: rgb(237, 52, 52);
+    margin: 0px;
+    padding: 10px 0px;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li a:hover{
+    background-color: rgb(189, 151, 95);
+    color: white;
+}
+
+@media (max-width:800px){
+    body{
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "mn mn mn mn mn mn mn mn"
+        "as as as as as as as as"
+        "ft ft ft ft ft ft ft ft";
+    }
+    aside{
+        background-image: url(https://hips.hearstapps.com/hmg-prod/images/-wilbur-and-orville-wright-photo-by--underwood--underwoodcorbiscorbis-via-getty-images.jpg);
+        background-size: cover;
+    }
+}
+@media (min-width: 1200px){
+    body{
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "as as as as as as as as"
+        "mn mn mn mn mn mn mn mn"
+        "ft ft ft ft ft ft ft ft";
+    }
+    aside{
+        background-image: url(https://www.wright-brothers.org/Information_Desk/Just_the_Facts/Airplanes/Wright_Airplane_images/1904_Flyer_II/1904_Flyer_Flight_16Nov.jpg);
+        background-size: cover;
+    }
+}
