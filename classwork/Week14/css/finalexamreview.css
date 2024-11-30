@@ -5,6 +5,9 @@ body{
 body > div{
     padding: 10px;
     background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
 header figure{
     margin: 0px;
@@ -17,6 +20,10 @@ header figure img{
 header{
     display: flex;
     margin: 10px 5px;
+    position: sticky;
+    top: 30px;
+    z-index: 1;
+    background-color: white;
 }
 header nav{
     flex-grow: 1;
