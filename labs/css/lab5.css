@@ -1,0 +1,8 @@
+main .table{
+    width: 25%;
+    margin: auto;
+}
+main .table thead, tbody tr{
+    text-align: center;
+}
+
