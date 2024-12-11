@@ -1,0 +1,94 @@
+body{
+    width: 900px;
+    margin: auto;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+}
+header div h1{
+    padding-top: 15px;
+    padding-left: 380px;
+}
+header div img{
+    width: 150px;
+}
+nav{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    background-color: lightgray;
+    margin: 15px;
+    padding: 3px;
+    font-weight: bold;
+}
+main div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 5px;
+}
+main > div img{
+    width: 100%;
+}
+main div:nth-child(2){
+    display: flex;
+}
+main div:nth-child(2) form{
+    display: flex;
+}
+main div:nth-child(2) form fieldset{
+    margin: 10px;
+}
+#subID, #resetID{
+    background-color: rgb(97, 97, 225);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+footer{
+    border: 2px solid black;
+    text-align: center;
+}
+footer p{
+    font-size: small;
+}
+@media (max-width:750px){
+    body{
+        display: grid;
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "nv nv nv nv nv nv"
+        "mn mn mn mn mn mn"
+        "ft ft ft ft ft ft";
+    }
+    header{
+        grid-area: hd;
+    }
+    nav{
+        grid-area: nv;
+        flex-direction: column;
+        text-align: center;
+    }
+    main{
+        grid-area: mn;
+    }
+    footer{
+        grid-area: ft;
+    }
+    main div{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    main > div img{
+        width: 100%;
+    }
+    main > div{
+        align-items: center;
+    }
+    
+
+
+}
